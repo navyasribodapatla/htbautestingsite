@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Computer Networks</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-bottom: 80px; /* Adding extra padding to prevent overlap */
+        }
+
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .features, .process {
+            margin: 20px 0;
+        }
+
+        .features ul, .process ol {
+            margin-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 style="color: white;">Introduction to Computer Networks</h1>
+        <h3 style="color: white;">by : Vijay</h3>
+    </div>
+    
+    <div class="container">
+        <p><strong>Network:</strong> A network is a group of interconnected devices that communicate, share resources, and exchange information with each other.</p>
+        <p><strong>Computer Network:</strong> A computer network links various devices together, allowing them to share resources and information. These devices are connected through wired connections like Ethernet cables or wireless options like Wi-Fi.</p>
+
+        <h2>Why We Use Computer Networks</h2>
+        <ul>
+            <li><strong>Sharing Resources:</strong> Easily share files, printers, and other resources.</li>
+            <li><strong>Communication:</strong> Connect with others through emails, chats, and video calls.</li>
+            <li><strong>Data Sharing:</strong> Exchange data quickly and securely.</li>
+            <li><strong>Remote Access:</strong> Access files and systems from anywhere.</li>
+            <li><strong>Internet Access:</strong> Connect to the world wide web.</li>
+        </ul>
+
+        <h2>Computer Networks in Today’s World</h2>
+        <p><strong>The Internet:</strong> The largest network, connecting billions of devices worldwide for communication, browsing, and online services.</p>
+        <p><strong>Home and Office Networks:</strong> Small networks, like LANs, used in homes or offices to connect devices and share resources like files and printers.</p>
+        <p><strong>Large Business Networks:</strong> Enable organizations to connect offices across cities or countries, facilitating resource and information sharing.</p>
+        <p><strong>Cloud Services:</strong> Networks like AWS and GCP allow users to store files and run applications online, accessible from anywhere.</p>
+        <p><strong>Social Media:</strong> Platforms like Instagram and Snapchat use vast networks to connect people, share updates, and communicate globally.</p>
+
+        <h2>Types of Networks</h2>
+        <ul>
+            <li><strong>Personal Area Network:</strong> The smallest type of network, connecting personal devices like phones and laptops within a short range, usually via Bluetooth or USB.</li>
+            <li><strong>Local Area Network:</strong> Covers a small area, like a home or office, allowing computers and devices to share resources like printers and files, typically using Ethernet or Wi-Fi.</li>
+            <li><strong>Metropolitan Area Network:</strong> Connects multiple LANs within a city or large campus, enabling them to communicate and share resources.</li>
+            <li><strong>Wide Area Network:</strong> Spans large distances, like across countries, connecting multiple LANs and MANs. The Internet is the largest WAN.</li>
+            <li><strong>Storage Area Network:</strong> Designed to provide access to shared storage devices, often used in data centers for fast and secure data management.</li>
+            <li><strong>Virtual Private Network:</strong> Creates a secure connection over the Internet, allowing users to safely access a private network remotely.</li>
+        </ul>
+
+        <h2>Network Models: OSI and TCP/IP</h2>
+        <h3>OSI Model</h3>
+        <p>The OSI (Open Systems Interconnection) Model is a theoretical framework used to understand and design network protocols, but it is not commonly used in practice. Instead, it serves as a reference model for designing and understanding network communication. It consists of seven layers:</p>
+        <ol>
+            <li><strong>Physical Layer:</strong> Handles the physical connection between devices and the transmission of raw binary data.</li>
+            <li><strong>Data Link Layer:</strong> Ensures reliable transmission across a network link with error detection and correction.</li>
+            <li><strong>Network Layer:</strong> Manages routing of data packets and handles logical addressing.</li>
+            <li><strong>Transport Layer:</strong> Provides end-to-end communication, error recovery, and flow control.</li>
+            <li><strong>Session Layer:</strong> Manages sessions or connections between applications, including setup and teardown.</li>
+            <li><strong>Presentation Layer:</strong> Translates data between the application layer and the network, including encryption and compression.</li>
+            <li><strong>Application Layer:</strong> Provides network services directly to user applications and processes.</li>
+        </ol>
+
+        <h3>TCP/IP Model</h3>
+        <p>The TCP/IP (Transmission Control Protocol/Internet Protocol) Model is a framework for modern networking with four layers:</p>
+        <ol>
+            <li><strong>Link Layer:</strong> Combines the functions of the OSI Physical and Data Link layers, managing network hardware and data framing.</li>
+            <li><strong>Internet Layer:</strong> Handles logical addressing and routing of packets across networks.</li>
+            <li><strong>Transport Layer:</strong> Ensures reliable or connectionless data transfer between applications.</li>
+            <li><strong>Application Layer:</strong> Encompasses the OSI Application, Presentation, and Session layers, providing network services directly to applications.</li>
+        </ol>
+
+        <h2>Common Network Protocols</h2>
+        <ul>
+            <li><strong>HTTP (Hypertext Transfer Protocol):</strong> Used for transferring web pages and other resources over the web.</li>
+            <li><strong>HTTPS (Hypertext Transfer Protocol Secure):</strong> An extension of HTTP that uses SSL/TLS to encrypt data exchanged between a web browser and server, providing secure communication.</li>
+            <li><strong>FTP (File Transfer Protocol):</strong> Used for transferring files between a client and a server over a network.</li>
+            <li><strong>SFTP (Secure File Transfer Protocol):</strong> Provides secure file transfer capabilities by encrypting data during the transfer process.</li>
+            <li><strong>SMTP (Simple Mail Transfer Protocol):</strong> Used for sending emails between servers.</li>
+            <li><strong>POP3 (Post Office Protocol version 3):</strong> Used by email clients to retrieve and download emails from a server.</li>
+            <li><strong>IMAP (Internet Message Access Protocol):</strong> Used for retrieving and managing emails on a server.</li>
+            <li><strong>DNS (Domain Name System):</strong> Translates domain names into IP addresses, allowing browsers and other applications to locate servers and resources on the Internet.</li>
+            <li><strong>DHCP (Dynamic Host Configuration Protocol):</strong> Automatically assigns IP addresses and other network configuration settings to devices on a network.</li>
+            <li><strong>TCP (Transmission Control Protocol):</strong> Provides reliable, ordered, and error-checked delivery of data between applications.</li>
+            <li><strong>UDP (User Datagram Protocol):</strong> Used for applications requiring fast, efficient transmission without the overhead of TCP’s reliability mechanisms.</li>
+            <li><strong>ICMP (Internet Control Message Protocol):</strong> Used for sending error messages and operational information about network issues.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>Networks are essential for connecting devices to share resources and information, whether in home environments, businesses, or across global systems like the Internet. Understanding the different types of networks and their functions helps in appreciating how data is managed and transmitted in different contexts, ensuring efficient and seamless connectivity.</p>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Introduction to Computer Networks</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
+``

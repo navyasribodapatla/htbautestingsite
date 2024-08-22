@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackthebox-au</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="textstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Spinner (initially hidden) -->
+    <div class="spinner" id="loading-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Main Page Content -->
+    <div class="blur-background" id="page-content">
+        <header>
+            <div class="container header-container">
+                <div class="logoandimg">
+                   <a href="https://www.hackthebox.com/">
+                       <div class="left"></div>
+                   </a> 
+                    <img src="logo.png" alt="Logo" class="logo">
+                    <a href="https://anurag.edu.in/">
+                        <div class="right"></div>
+                    </a>
+                </div>
+                <div class="logo-neon-line"></div>
+                <nav>
+                    <ul id="nav-links">
+                        <li><a href="blog.html" id="blogs" >BLOGS</a></li>
+                        <li><a href="team.html" id="team">TEAM</a></li>
+                        <li><a href="event.html" id="contact">EVENTS</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <span> </span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <h2><span class="bold">HACK</span> <span class="normal">THE</span> <span class="bold">BOX</span></h2>
+                    <p>"Attack. Defend. Conquer."</p>
+                    <div class="clublogo">
+                        <img src="logo 2.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="container">
+                    <h2>Club Activities</h2>
+                    <div class="grid">
+                        <div class="service s1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <h1>Capture the Flag</h1>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <!-- flip info -->
+                                         <p>Capture the Flag (CTF) is a cybersecurity competition where participants solve challenges to find hidden "flags," representing security vulnerabilities. It helps improve problem-solving skills and technical knowledge in areas like cryptography and web security. CTFs are widely used for education and skill development in the cybersecurity field.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service s2">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <h1>Workshops</h1>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <!-- flip info -->
+                                         <p>Workshops are interactive training sessions where participants learn practical skills through hands-on activities. They provide an opportunity for in-depth exploration of specific topics, often led by experts in the field. Workshops are valuable for gaining real-world experience and enhancing professional development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service s3">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <h1>Passwordcracking</h1>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <!-- flip info -->
+                                         <p>Password cracking involves the process of recovering passwords from stored data by exploiting weak security practices or vulnerabilities. It often utilizes techniques such as brute force attacks, dictionary attacks, or exploiting common passwords to gain unauthorized access. This practice highlights the importance of using strong, complex passwords to protect sensitive information.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service s5">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <h1 style="color: #A7B1FF;">Blue teaming</h1>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <!-- flip info -->
+                                         <p style="color: #A7B1FF;">Blue teaming refers to the defensive side of cybersecurity, where the team's primary role is to protect an organization’s IT systems from attacks. They focus on monitoring, detecting, and responding to security threats, continuously improving defenses to prevent breaches. Blue teams work to maintain the integrity, availability, and confidentiality of systems and data.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service s4">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <h1>Penetration testing</h1>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <!-- flip info -->
+                                         <p>Penetration testing, often referred to as "pen testing," is a simulated cyberattack on a computer system to evaluate its security. It involves identifying and exploiting vulnerabilities to understand potential risks and improve security measures. This process is crucial for safeguarding systems against real-world cyber threats.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service s6">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <h1 style="color: #FF5757;">Red teaming</h1>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <!-- flip info -->
+                                         <p style="color: #e84c4c;">Red teaming involves simulating real-world cyber attacks to test an organization’s defenses. This team adopts the mindset of an adversary, using advanced techniques to exploit vulnerabilities and assess the effectiveness of security measures. The goal is to identify weaknesses before actual attackers can exploit them, ultimately strengthening the overall security posture.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footerleft">
+                <h3>About Us</h3>
+                <p>Hack the Box Anurag University (HTBAU) is a student-run club focused on cybersecurity and ethical hacking.</p>
+            </div>
+            <div class="footermiddle">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footerright">
+                <h3>Follow Us</h3>
+                <div class="ficons">
+                    <a href="https://www.instagram.com/htb_au?igsh=MThwd3M5aHRmbTc4eA=="><i class="ri-instagram-line"></i></a>
+                    <a href="https://discord.com/invite/fXCWrGhv"><i class="ri-discord-fill"></i></a>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

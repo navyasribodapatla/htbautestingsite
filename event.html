@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" href="sample.css">
+    <link rel="stylesheet" href="textstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: rgba(17, 17, 17, 0); /* Changed for more reliable transparency */
+            color: #fff;
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header-container {
+            padding-top: 5vh;
+            padding-left: 15vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo {
+            width: 300px;
+            height: auto;
+        }
+
+        .logo-neon-line {
+            width: 1000px;
+            height: 5px;
+            margin-top: 150px;
+            background-color: #85c352ec;
+            box-shadow: 0 0 10px rgba(133, 195, 82, 0.93);
+            border-radius: 5px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 50px;
+            font-size: 1.5em;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #85c352ec;
+            text-shadow: 0 0 2px #85c352ec;
+        }
+
+        ul {
+            font-size: 1.2vh;
+        }
+
+        .page1 {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            padding-top: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container1 {
+            height: 50%;
+            width: 58%;
+            background-image: url(Banner.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            color: #85c352ec;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #0d0d0d;
+            padding: 30px;
+            color: #85c352ec;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            border-top: 5px solid #85c352ec;
+            box-shadow: 0 -10px 20px #85c352ec;
+        }
+
+        .footerleft, .footermiddle, .footerright {
+            width: 30%;
+        }
+
+        .footerleft h3, .footermiddle h3, .footerright h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #ffffff;
+            text-shadow: 0 0 10px #85c352ec;
+        }
+
+        .footerleft p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #85c352ec;
+        }
+
+        .footermiddle ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footermiddle ul li {
+            margin-bottom: 10px;
+        }
+
+        .footermiddle ul li a {
+            color: #85c352ec;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        .footermiddle ul li a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 5px #85c352ec;
+        }
+
+        .ficons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .ficons a {
+            color: #85c352ec;
+            font-size: 24px;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        .ficons a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #85c352ec;
+        }
+
+        /* Large screens (desktops) */
+        @media only screen and (min-width: 1200px) {
+            .logo-neon-line {
+                width: 1000px;
+            }
+        }
+
+        /* Medium screens (laptops) */
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .logo-neon-line {
+                width: 800px;
+            }
+        }
+
+        /* Small screens (tablets) */
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .logo-neon-line {
+                width: 600px;
+                margin-top: 100px; /* Adjust margin for tablets */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 0;
+            }
+      
+            body {
+                overflow-y: hidden;
+            }
+
+            .logoandimg {
+                margin-bottom: 10px;
+            }
+
+            nav {
+                width: 100%;
+            }
+            .container1{
+    height: 20vh;
+    width: 90%;
+    background-color: yellow;
+}
+
+            nav ul {
+                display: none; /* Hide navigation links by default */
+                flex-direction: column;
+                gap: 10px;
+                background-color: #333;
+                padding: 10px 0;
+                align-items: center;
+                position: absolute;
+                top: 60px; /* Position below the header */
+                left: 0;
+                right: 0;
+                z-index: 1000;
+            }
+
+            nav ul.active {
+                display: flex;
+                margin-top: 17vh;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+                margin-left: 0;
+            }
+
+            .hamburger-menu {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                cursor: pointer;
+            }
+
+            .hamburger-menu span {
+                display: block;
+                width: 25px;
+                height: 3px;
+                background: #85c352ec;
+                transition: all 0.3s ease;
+            }
+
+            .hamburger-menu.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .hamburger-menu.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger-menu.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header>
+        <div class="container header-container">
+            <div class="logoandimg">
+                <a href="https://www.hackthebox.com/">
+                    <div class="left"></div>
+                </a>
+                <img src="logo.png" alt="Logo" class="logo">
+                <a href="https://anurag.edu.in/">
+                    <div class="right"></div>
+                </a>
+            </div>
+            <div class="logo-neon-line"></div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html" id="home">HOME</a></li>
+                    <li><a href="blog.html" id="blogs">BLOGS</a></li>
+                    <li><a href="team.html" id="team" style="text-decoration: underline;">TEAM</a></li>
+                    <li><a href="event.html" id="contact">EVENTS</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="page1">
+        <div class="info">
+            <h1>Ongoing Events</h1>
+        </div>
+        <div class="container1">
+            <!-- <img src="/Banner.png" alt="" srcset=""> -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerleft">
+            <h3>About Us</h3>
+            <p>Hack the Box Anurag University (HTBAU) is a student-run club focused on cybersecurity and ethical hacking.</p>
+        </div>
+        <div class="footermiddle">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footerright">
+            <h3>Follow Us</h3>
+            <div class="ficons">
+                <a href="https://www.instagram.com/htb_au?igsh=MThwd3M5aHRmbTc4eA=="><i class="ri-instagram-line"></i></a>
+                <a href="https://discord.com/invite/fXCWrGhv"><i class="ri-discord-fill"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const navLinks = document.getElementById('nav-links');
+
+            hamburgerMenu.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
+                hamburgerMenu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
